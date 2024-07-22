@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart  | Create Product page</title>
+    <link rel="stylesheet" href="createProduct.css">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand">
+                    Shopping Cart
+                </a>
+                <nav>
+                    <ul id="links">
+                        <li>
+                            <a href="login.html">Sign In</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Sign Up</a>
+                        </li>
+                    </ul>
+                    <ul id="userinfo" style="display:none;">
+                        <li>
+                            <a href="profile.html" id="user"></a>
+                        </li>
+                        <li>
+                            <a href="favourites.html">Favorites</a>
+                        </li>
+                        <li class="shoppingCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge"></span>
+                            <div class="cartProducts">
+                                <div></div>
+                                <a href="cart.html" class="view">View all products</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" id="logout">Log Out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="createProductPage">
+        <div class="container">
+            <form id="createForm">
+                <input type="file" id="uploadImg"  accept="image/* ">
+                <input type="text" placeholder="Name Of Product ..." id="pName"> 
+                <input type="text" placeholder="Description ..." id="pDesc"> 
+                <select id="size">
+                    <option value="" hidden>Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+    </section>
+
+    <script src="js/createProduct.js"></script>
+    <script src="js/user.js"></script>
+  
+    
+
+   
+</body>
+</html>

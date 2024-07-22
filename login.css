@@ -1,0 +1,20 @@
+.forgot-password-container {
+    text-align: center;
+    margin-bottom: 10px;
+  
+}
+
+.forgot-password-container input[type=button] {
+    font-size: x-large;
+    border: 1px solid #ddddddb5;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: black;
+    
+}
+
+.forgot-password-container input[type=button]:hover {
+    opacity: 0.5;
+}
